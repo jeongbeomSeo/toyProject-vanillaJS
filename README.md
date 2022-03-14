@@ -12,4 +12,4 @@
 
 To Do List는 만들지 않았다. 다만, To Do를 구현할 때 To Do List를 만드는 과정과 최대한 근접하도록 생각하면서 구현을 해놓았다.
 
-![HomePage](./homepage.png)
+![HomePage](./HomePage.png)
