@@ -1,0 +1,31 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+footer .footer__column:first-child {
+  opacity: 0.7;
+}
+
+@keyframes infiniteRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer .footer__column:nth-child(2) {
+  width: 600px;
+  text-align: center;
+}
+
+footer .footer__column:first-child:hover {
+  animation: infiniteRotate 1s linear infinite;
+}

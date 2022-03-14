@@ -1,0 +1,186 @@
+main {
+  margin-top: 200px;
+}
+
+.main__ask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__ask span {
+  display: block;
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.main__ask .main__askName {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  width: 500px;
+  height: 100px;
+  font-size: 40px;
+  color: white;
+}
+
+.main__after {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.main__clock-box {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  /* box를 중앙정렬하기위해 부모 element에다가 width:100%를 주고 margin을 이용*/
+}
+/* !!중앙 정렬!! 
+1. 부모 element와 자식 element를 주의깊게 보고, margin을 활용하자.
+2. position:absolute;, left:50%;, top:50%;, transform: translate(-50%, 0-50%); 
+3. flex 를 활용하자.
+4. text-align 활용하자.
+5. grid 와 place-content를 활용하자.
+*/
+
+.main__clock {
+  font-size: 130px;
+}
+
+.change-clock-mode {
+  display: flex;
+  width: 120px;
+  /* 사실 이 icon은 width가 120px만큼 필요없지만 
+  형제 element인 label의 display: none으로 바뀌는 순간 
+  width가 바뀌어 위치가 바뀌는 현상을 막기위해서 
+  형제 element와 똑같은 width를 준 것이다 */
+  flex-direction: column;
+  position: absolute;
+  font-size: 30px;
+  right: -70px;
+  top: 45%;
+}
+
+.change-clock-mode i {
+  cursor: pointer;
+}
+
+.clock-mode__checkbox {
+  color: black;
+  font-size: 14px;
+  width: 120px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 7px;
+  border-top-left-radius: 0px;
+  background-color: white;
+  padding-left: 10px;
+  transform: translateX(45px);
+  font-weight: 500;
+  cursor: grab;
+  display: none;
+}
+
+.main__greeting {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.main__toDo {
+  margin-top: 100px;
+}
+
+.main__toDo--asking span {
+  font-size: 30px;
+}
+
+.main__toDo--asking form {
+  margin-top: 20px;
+}
+
+.main__toDo--asking input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  font-weight: 600;
+  width: 500px;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.toDo__today {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main__toDo--paint {
+  display: none;
+}
+
+.main__toDo--paint ul {
+  margin-top: 10px;
+}
+
+.main__toDo--paint li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.spanCheckbox {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inputCheckbox {
+  display: none;
+}
+
+.checkbox input:checked + span::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  transform: rotate(-50deg);
+  width: 16px;
+  height: 8px;
+  left: 4px;
+  top: 1px;
+}
+
+.toDoText {
+  display: block;
+  margin: 0 15px;
+  font-size: 30px;
+}
+
+.main__toDo--paint .fa-trash-can,
+.main__toDo--paint label {
+  display: none;
+}
+
+.main__toDo--paint:hover .fa-trash-can,
+.main__toDo--paint:hover label {
+  display: block;
+}
+
+.main__toDo--paint .fa-trash-can {
+  opacity: 0.7;
+}

@@ -9,7 +9,6 @@ function checkWeather(url) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const temp = document.querySelector(".header__temperature");
       const locat = document.querySelector(".header__location");
       const icon = document.querySelector(".header__temp-icon");

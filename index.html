@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beom's Toy Project</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -31,9 +31,56 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="main__ask">
+        <span>What is you name?</span>
+        <form class="main__submitName">
+          <input type="text" class="main__askName" />
+        </form>
+      </div>
+      <div class="main__after">
+        <div class="main__clock-box">
+          <div class="main__clock"></div>
+          <div class="change-clock-mode">
+            <i class="fa-solid fa-ellipsis"></i>
+            <label class="clock-mode__checkbox"
+              >24-hour clock <input type="checkbox" checked
+            /></label>
+          </div>
+        </div>
+        <div class="main__greeting">Good evening, Beom!</div>
+
+        <div class="main__toDo">
+          <div class="main__toDo--asking">
+            <span>What is your main focus for today?</span>
+            <form class="toDoForm">
+              <input type="text" />
+            </form>
+          </div>
+          <div class="main__toDo--paint">
+            <span class="toDo__today">today</span>
+            <ul class="main__toDoList"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__column">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="footer__column">
+        <div class="quotes"></div>
+      </div>
+      <div class="footer__column">To Do</div>
+    </footer>
+
     <script src="./javascript/search.js"></script>
     <script src="./javascript/clock.js"></script>
     <script src="./javascript/cloud.js"></script>
+    <script src="./javascript/ask.js"></script>
+    <script src="./javascript/greeting.js"></script>
+    <script src="./javascript/todo.js"></script>
+    <script src="./javascript/quotes.js"></script>
   </body>
 </html>

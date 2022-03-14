@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  margin: 5px 20px;
+  color: white;
+  line-height: 60px;
+  justify-content: space-between;
+  height: 60px;
+  background-color: transparent;
+}
+
+.header__left {
+  display: flex;
+  font-weight: 400;
+}
+
+.header__search {
+  margin-left: 10px;
+  position: relative;
+}
+
+.header__search span {
+  display: block;
+  position: absolute;
+  left: 2px;
+  height: 30px;
+  opacity: 0.8;
+}
+
+.header__search:hover input {
+  border-bottom: 2px solid #ffffff60;
+}
+
+.header__search:focus-within input {
+  border-color: white;
+}
+
+.header__search:hover img {
+  filter: opacity(100) brightness(0.6);
+}
+
+.header__search:focus-within img {
+  filter: opacity(100);
+}
+
+.header__search input {
+  color: white;
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  /* 이와 같이 하면서 border이 자연스럽게 나오는것을 만들 수 있다.
+  그냥 hover만 만들면 마우스를 올려놓을 시에 크기도 변하면서 색깔도 흰색에서 위의 색으로 적용되서 매우 이상하다.
+  */
+  transition: border-bottom 0.2s linear;
+  padding-left: 25px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.header__search img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  filter: opacity(0) brightness(0.6);
+  background: transparent;
+  right: 2px;
+  top: 12px;
+  transition: all 0.2s linear;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__right-top {
+  display: flex;
+  height: 40px;
+}
+
+.header__right .header__temp-icon img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(100);
+}
+
+.header__right .header__temperature {
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__right-bottom {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 300;
+}
