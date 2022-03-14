@@ -11,3 +11,5 @@
 검색 기능, 날씨 확인 기능, 시계(24시간 , 12시간), 이름 및 인사, To Do, quotes 까지 만들었다.
 
 To Do List는 만들지 않았다. 다만, To Do를 구현할 때 To Do List를 만드는 과정과 최대한 근접하도록 생각하면서 구현을 해놓았다.
+
+![HomePage](./homepage.png)
